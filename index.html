@@ -1,0 +1,70 @@
+HTML: 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XOXO Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">XOXO Arena</h1>
+
+        <!-- User Authentication -->
+        <div id="user-area">
+            <div class="status" id="status">Welcome! Please log in or sign up.</div>
+            <div id="login-form" class="login-form">
+                <input type="text" id="username" placeholder="Enter username">
+                <input type="password" id="password" placeholder="Enter password">
+                <button id="login-btn">Login</button>
+                <button id="signup-btn">Sign Up</button>
+            </div>
+            <div id="user-info" class="user-info" style="display: none;">
+                <p>Logged in as <span id="display-username"></span></p>
+                <p>Points: <span id="user-points">0</span></p>
+                <button id="logout-btn">Logout</button>
+            </div>
+        </div>
+
+        <!-- Game Area -->
+        <div class="board-container" style="display:none;">
+            <div class="status" id="game-status">Your turn!</div>
+            <div class="board" id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <button id="reset-btn">Reset Game</button>
+        </div>
+
+        <!-- Controls to change difficulty -->
+        <div class="controls">
+            <button id="easy-mode-btn">Easy Mode</button>
+            <button id="hard-mode-btn">Hard Mode</button>
+        </div>
+
+        <button id="see-account-btn" style="position: absolute; top: 10px; right: 10px; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 25px; cursor: pointer;">See My Account</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+ 
+   
+
+
